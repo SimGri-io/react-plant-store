@@ -14,7 +14,7 @@
 ## Media management:
 - Cloudinary
 
-## Deployed on Netlofy and Heroku
+## Deployed on Netlify and Heroku
 
 ## Check out the final project website: 
 
