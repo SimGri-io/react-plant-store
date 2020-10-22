@@ -1,15 +1,15 @@
 import React from "react";
-import Hero from '../components/Hero';
+import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import FeaturedProducts from '../components/Products/FeaturedProducts';
 
 export default function Home() {
   return <>
-  <Hero>
-    <Link to="products" className="btn btn-primary btn-hero">
+  <Banner>
+    <Link to="products" className="btn btn-primary btn-banner-back">
       our flowers
     </Link>
-  </Hero>
+  </Banner>
   <FeaturedProducts />
   </>;
 }

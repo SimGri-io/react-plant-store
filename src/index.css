@@ -1,17 +1,7 @@
-/* 
-====== 
-Fonts
-======
-*/
+
 @import url("https://fonts.googleapis.com/css?family=Catamaran:300,400|Kaushan+Script&display=swap");
-/* 
-====== 
-Variables 
-======
-*/
+
 :root {
-  /* --primaryColor: #9e3aa3; */
-  /* --primaryDarkColor: #4e1d51; */
   --primaryColor: #630c37;
   --primaryDarkColor: #330527;
   --primaryFont: "Catamaran", sans-serif;
@@ -33,11 +23,8 @@ Variables
   --smallWidth: 85vw;
   --fullWidth: 1170px;
 }
-/* 
-====== 
-Global Styles 
-======
-*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -87,11 +74,7 @@ img {
   width: 10rem;
   margin: 0 auto;
 }
-/* 
-====== 
-Buttons 
-======
-*/
+
 .btn,
 .btn-white,
 .btn-primary {
@@ -135,11 +118,7 @@ Buttons
   box-shadow: var(--lightShadow);
   text-align: center;
 }
-/* 
-====== 
-Header
-======
-*/
+
 .header {
   padding: 2rem 0;
 }
@@ -175,12 +154,8 @@ Header
     margin: 0 0.5rem;
   }
 }
-/* 
-====== 
-Hero
-======
-*/
-.hero {
+
+.banner-back {
   min-height: calc(100vh);
   background: linear-gradient(
       to right,
@@ -197,17 +172,17 @@ Hero
   width: var(--smallWidth);
   max-width: var(--fullWidth);
 }
-.hero h1 {
+.banner-back h1 {
   font-size: 2rem;
   text-transform: capitalize;
 }
-.hero p {
+.banner-back p {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 1.75rem;
 }
-.btn-hero {
+.btn-banner-back {
   border-radius: 0;
   font-weight: bold;
   padding: 0.8rem 1.5rem;
@@ -215,7 +190,7 @@ Hero
   border-color: var(--primaryDarkColor);
   color: var(--mainBlack);
 }
-.btn-hero:hover {
+.btn-banner-back:hover {
   color: var(--primaryDarkColor);
 }
 @media screen and (min-width: 768px) {
@@ -223,22 +198,19 @@ Hero
     margin-top: 0;
   }
 
-  .hero h1 {
+  .banner-back h1 {
     font-size: 3rem;
   }
-  .hero p {
+  .banner-back p {
     font-size: 2rem;
   }
-  .btn-hero {
+  .btn-banner-back {
     font-size: 1.2rem;
     padding: 1rem 3rem;
   }
 }
-/* 
-====== 
-About
-======
-*/
+
+
 .about-section {
   width: var(--smallWidth);
   max-width: var(--maxWidth);
@@ -249,11 +221,8 @@ About
   font-weight: 400;
   letter-spacing: 2px;
 }
-/* 
-====== 
-Error
-======
-*/
+
+
 .error-page {
   display: flex;
   justify-content: center;
@@ -262,11 +231,6 @@ Error
   text-align: center;
   text-transform: capitalize;
 }
-/* 
-====== 
-Product List
-======
-*/
 
 .section {
   padding: 4rem 0;
@@ -287,7 +251,6 @@ Product List
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   column-gap: 1.8rem;
   row-gap: 1.8rem;
-  /* align-items: start; */
 }
 .product {
   background: var(--mainWhite);
@@ -305,7 +268,6 @@ Product List
   padding: 3rem;
   background: rgba(255, 255, 255, 0.5);
   position: relative;
-  /* height: 5rem; */
 }
 .product img {
   transition: var(--mainTransition);
@@ -345,11 +307,6 @@ Product List
   margin-bottom: 0;
   font-size: 1.1rem;
 }
-/* 
-====== 
-Single Product
-======
-*/
 
 .single-product {
   width: var(--smallWidth);
@@ -385,11 +342,7 @@ Single Product
     column-gap: 3rem;
   }
 }
-/* 
-====== 
-Cart
-======
-*/
+
 .empty-cart {
   text-align: center;
   text-transform: capitalize;
@@ -443,11 +396,6 @@ Cart
   color: var(--primaryColor);
   font-size: 1rem;
 }
-/* 
-====== 
-Cart Link
-======
-*/
 .cart-link-container {
   position: relative;
 }
@@ -466,11 +414,7 @@ Cart Link
   font-size: 1rem;
   color: var(--mainWhite);
 }
-/* 
-====== 
-Login Form
-======
-*/
+
 .form {
   width: var(--smallWidth);
   margin: 0 auto;
@@ -526,11 +470,7 @@ Login Form
   color: var(--darkGrey);
   border-color: var(--darkGrey);
 }
-/* 
-====== 
-Login Button
-======
-*/
+
 .login-btn {
   text-transform: capitalize;
   background: transparent;
@@ -553,11 +493,7 @@ Login Button
     margin: 0 0.5rem;
   }
 }
-/* 
-====== 
-Alert
-======
-*/
+
 .alert-container {
   position: fixed;
   top: 30%;
@@ -603,11 +539,7 @@ Alert
   cursor: pointer;
   line-height: 0;
 }
-/* 
-====== 
-Checkout
-======
-*/
+
 .checkout-form h3 span {
   color: var(--primaryColor);
 }
@@ -634,11 +566,7 @@ Checkout
 .checkout-form button {
   margin-top: 1rem;
 }
-/* 
-====== 
-Scroll Button
-======
-*/
+
 .scroll-btn {
   position: fixed;
   right: 1.5rem;
@@ -657,11 +585,7 @@ Scroll Button
   z-index: 100;
   opacity: 1;
 }
-/* 
-====== 
-Pagination Buttons
-======
-*/
+
 .pagination-buttons {
   width: var(--smallWidth);
   max-width: var(--fullWidth);
@@ -710,11 +634,7 @@ Pagination Buttons
   background: var(--primaryColor);
   color: var(--mainWhite);
 }
-/* 
-====== 
-Filters Section
-======
-*/
+
 .filters-section {
   width: var(--smallWidth);
   margin: 0 auto;
